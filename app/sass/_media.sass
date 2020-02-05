@@ -92,45 +92,23 @@
 
 
 @media only screen and (max-width: 1550px)
-  main .container
-    flex-direction: column
-    align-items: center
-
   .main-item
-    text-align: center
-    max-width: 520px
-    &:first-child
-      max-width: none
-      margin: 0 0 40px 0
-    .text
-      padding: 0 0 230px
-      font-size: 18px
-      p
-        br
-          display: none
-
-  h1
-    text-align: center
-
-  main .btn-accent
-    margin: 0 auto
-    position: absolute
-    bottom: 0
-    left: 50%
-    transform: translate(-50%,0)
-
-  main .sale
-    position: absolute
-    bottom: 128px
-    left: 0
-    width: 100%
-    margin: 0
-
-  main
-    padding: 123px 0 247px
+    max-width: 480px
 
   .headquarters:after
     display: none
+
+  .main-item:first-child
+    max-width: 400px
+
+  .main-item .text
+    br
+      display: none
+
+  main .btn-accent
+    width: 420px
+    height: 90px
+
 
 @media only screen and (max-width: 1440px)
   .program-item__content
@@ -158,6 +136,11 @@
 
   .headquarters-content-text
     max-width: 640px
+
+  .image-bg
+    width: 900px
+    height: 600px
+    left: -18%
 
 @media only screen and (max-width: 1390px)
   .headquarters-content
@@ -234,6 +217,10 @@
     padding: 20px 0 0
     h2
       margin: 0 auto 45px
+
+
+
+
 
 @media only screen and (max-width: 1200px)
   .about-item
@@ -374,7 +361,42 @@
     h2
       margin: 0 auto 30px
 
+  .main-item
+    text-align: center
+    max-width: 520px
+    &:first-child
+      max-width: none
+      margin: 0 0 40px 0
+    .text
+      padding: 0 0 230px
+      font-size: 18px
+      p
+        br
+          display: none
 
+  h1
+    text-align: center
+
+  main .container
+    flex-direction: column
+    align-items: center
+
+  main .btn-accent
+    margin: 0 auto
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%,0)
+
+  main .sale
+    position: absolute
+    bottom: 128px
+    left: 0
+    width: 100%
+    margin: 0
+
+  main
+    padding: 123px 0 247px
 
 
 @media only screen and (max-width: 1080px)
