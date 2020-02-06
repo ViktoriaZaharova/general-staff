@@ -25,7 +25,17 @@ $('.btn-maps').click(function (e) {
 });
 
 // mail
-$(".form").submit(function () {
+$(".form").submit(function (e) {
+    e.preventDefault();
+    var phone_input = $('[name="phone"]').val();
+
+    $(".error").fadeOut();
+
+    if (phone_input.length < 1) {
+        $('[name="phone"]').parent('label').siblings('.error').fadeIn();
+    }
+
+
     $.ajax({
         type: "POST",
         url: "mail.php",

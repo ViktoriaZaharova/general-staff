@@ -738,8 +738,11 @@
                 </label>
                 <label>
                     <span class="icon"><img src="img/phone.svg" alt=""></span>
-                    <input type="text" name="phone" placeholder="Телефон" required>
+                    <input type="text" name="phone" placeholder="Телефон" maxlength="11">
                 </label>
+
+                <div class="error">Введите корректный номер телефона</div>
+
                 <button type="submit" class="btn btn-accent">Бронировать путевку</button>
 
                 <label class="checkbox">
