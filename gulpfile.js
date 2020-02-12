@@ -9,18 +9,18 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     tinypng = require('gulp-tinypng-compress'),
     cache = require('gulp-cache'),
-    imagemin = require('gulp-imagemin'),
-    sourcemaps = require('gulp-sourcemaps');
+    imagemin = require('gulp-imagemin');
+    // sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('sass',function(){
   return gulp.src('app/sass/**/*.sass')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 2 version'],
       cascade: true
     }))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
 });
